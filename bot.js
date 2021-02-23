@@ -1,6 +1,5 @@
 const discord = require('discord.js');
 const fs = require('fs');
-const bitcoin = require('bitcoinjs-lib');
 const client = new discord.Client();
 const config = require('./config.json');
 
