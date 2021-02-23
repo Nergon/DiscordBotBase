@@ -1,4 +1,5 @@
-const { prefix} = require('../config.json');
+const { prefix } = require('../config.json');
+const discord = require('discord.js');
 
 module.exports = {
     name: 'message',
@@ -13,7 +14,7 @@ module.exports = {
             const errorEmbed = new discord.MessageEmbed()
                 .setColor('RED')
                 .setTitle('Command not found')
-                .setDescription(`This command does not exist. Try ${config.prefix}help for a list of commands`)
+                .setDescription(`This command does not exist. Try ${prefix}help for a list of commands`)
             message.reply(errorEmbed);
             return;
         }
